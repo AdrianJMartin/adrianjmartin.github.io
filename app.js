@@ -5,6 +5,7 @@ app.config(['$routeProvider',
     $routeProvider
       .when('/one',{templateUrl:'one.htm',controller:'oneCtrl'})
       .when('/two',{templateUrl:'two.htm',controller:'twoCtrl'})
+      .when('/mce',{templateUrl:'mce.html',controller:'mceCtrl'})
       .otherwise({redirectTo:"/one"});
   }
 ]);
@@ -24,6 +25,12 @@ controllers.controller( "oneCtrl" ,
 );
 
 controllers.controller( "twoCtrl" ,
+  function($scope){
+
+  }
+);
+
+controllers.controller( "mceCtrl" ,
   function($scope){
 
   }
