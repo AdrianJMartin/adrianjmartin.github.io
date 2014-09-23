@@ -1,4 +1,4 @@
-var app = angular.module( "app", ["controllers"]);
+var app = angular.module( "app", ["ngRoute","controllers"]);
 
 app.config(['$routeProvider',
   function($routeProvider){
@@ -13,6 +13,18 @@ var controllers = angular.module( "controllers" ,[]);
 
 controllers.controller( "indexCtrl" ,
   function($scope){
-    
+
+  }
+);
+
+controllers.controller( "oneCtrl" ,
+  function($scope){
+
+  }
+);
+
+controllers.controller( "twoCtrl" ,
+  function($scope){
+
   }
 );
